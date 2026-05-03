@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+    <div id="links_Wrapperr">
+        <a class="links_Nav" href="index.html" class="activ">דף הבית</a>
+        <a class="links_Nav" href="Models.html">הדגמים</a>
+        <a class="links_Nav" href="branches.html">סניפים</a>
+        <a class="links_Nav" href="order.html">הזמנה</a>
+    </div></header>
+ <div class="top">
+      <h1 class="logo">Tesla</h1>
+      <h2>הזמנת רכב </h2>
+      <label>בחר/י דגם</label><br>
+</div>      
+<div class="model-container">
+    <div class="model">
+        <input type="radio" id="model_s" name="model" value="S" required>
+        <label for="model_s">מודל S</label><br>
+        <img src="img/ModelS_62.jpg" alt="S">
+    </div>
+    <div class="model">
+        <input type="radio" id="model_x" name="model" value="X" required>
+        <label for="model_x">מודל X</label><br>
+        <img src="img/ModelX_63.jpg" alt="X">
+    </div>
+</div>
+<div class="model-container">
+    <div class="model">
+        <input type="radio" id="model_3" name="model" value="3" required>
+        <label for="model_3">מודל 3</label><br>
+        <img src="img/Model-3-Performance_48.jpg" alt="3">
+    </div>
+    <div class="model">
+        <input type="radio" id="model_y" name="model" value="Y" required>
+        <label for="model_y">מודל Y</label><br>
+        <img src="img/ModelY_58.jpg" alt="Y">
+    </div>
+</div>
+ <label for=""></label>
+<div class="detail">
+<h2>בחר/י צבע:</h2>
+<label for=""></label> צבע הTesla</label><input type="color"><br>
+</div>
+<br>
+<br>
+<div class="detail"><label for="username">שם מזמין: </label >
+    <input  class="input" type="text" id="username" name="username" required placeholder><br></div>
+    <br>
+    <div class="detail">
+    <label for="phone">טלפון מזמין:</label>
+    <input class="input" type="tel" id="phone" name="phone" ><br>
+    <br></div><br>
+    <div class="detail">
+    <label for="email">מייל מזמין:</label>
+    <input class="input" type="email" id="email" name="email" ><br>
+    <br></div><br>
+    <div class="detail">
+    <label for="address">כתובת מזמין:</label>
+    <input class="input" type="text" id="address" name="address" ><br>
+    </div>
+    <br><div class="detail">
+    <label for="country">בחר מדינה:</label>
+    <input class="input" list="countries" id="country" name="country" >
+    <datalist id="countries">
+        <option value="ישראל"></option>
+        <option value="ארצות הברית"></option>
+        <option value="בריטניה"></option>
+        <option value="צרפת"></option>
+        <option value="גרמניה"></option>
+        <option value="יפן"></option>
+        <option value="איטליה"></option>
+        <option value="ספרד"></option>
+        <option value="קנדה"></option>
+        <option value="ברזיל"></option>
+        <option value="הודו"></option>
+    </datalist><br></div>
+    <br><div class="detail">
+    <br><label for="credit-card-number">מספר כרטיס אשראי:</label>
+            <input  class="input" type="text" id="credit-card-number" name="credit-card-number" maxlength="16" pattern="\d{16}" required placeholder="1234 5678 9101 1121"><br>
+        </div><br>
+        <div class="detail">
+            <label for="expiry-month">תוקף (חודש):</label>
+            <input class="input" type="number" id="expiry-month" name="expiry-month" min="1" max="12" required placeholder="01"><br>
+        </div><br>
+        <div class="detail"><br>
+            <label for="expiry-year">תוקף (שנה):</label>
+            <input class="input" type="number" id="expiry-year" name="expiry-year" min="2024" required placeholder="2025"><br>
+        </div><br>
+        <div class="detail"><br>
+            <label for="cvv">קוד CVV (3 ספרות בגב הכרטיס):</label>
+            <input class="input" type="text" id="cvv" name="cvv" maxlength="3" pattern="\d{3}" required placeholder="123"><br>  
+            <br> </div></div><br>
+            <div class="stamp">
+                <h4 class="shine-effect" >טסלה מתחייבים לשירות הטוב ביותר!</h4>
+        </div><br>
+            <button type="submit">שלח</button>
+            <h5 >נסיעה טובה, Tesla</h5>
+        <footer class="thefooter">כל הזכויות שמורות©Tesla</footer>  
+            </body>
+            </html>

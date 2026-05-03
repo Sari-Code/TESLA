@@ -1,0 +1,90 @@
+body {
+  direction: rtl;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(255, 255, 0, 1));
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+}
+.container {
+  position: relative; 
+}
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px; 
+}
+img {
+  width: 80%; 
+  margin: 0 auto; 
+  display: block;
+}
+.image-container img {
+  width: 48%; 
+}
+.models{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+.container:hover .overlay {
+  opacity: 1; 
+}
+h1{
+    color: white;
+    text-align: center;
+} 
+h2 {
+  margin: 0;
+  clear: both;
+  color: navajowhite;
+}
+.newcars {
+  margin: 10px;
+}
+a{  
+  display: inline-block; 
+  margin-right: 10px; 
+}
+.overlay {
+  position: absolute;
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 140, 186, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.logo{
+  font-size: 80px;
+  text-align: left;
+  transform: translateY(-20px);
+  animation: logo 2s forwards;
+  opacity: 0;
+  color: black;
+  top: 5px;
+  margin: 0;
+  padding: 50px;
+  box-sizing: border-box;
+}
+@keyframes logo{
+to{
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+@media (max-width: 600px) {
+  .car img {
+      width: 80%;
+      height: auto;
+  }
+}
